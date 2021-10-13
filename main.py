@@ -9,9 +9,15 @@ import discord
 from discord import channel
 from discord.client import Client
 from random import randint
+from dotenv import load_dotenv
+import os
+from os.path import join, dirname
+
+dotenv_path = join(dirname(__file__), '.env')
+load_dotenv(dotenv_path)
 
 client = discord.Client()
-discord_token = "ODc1OTk3NjkzODc5NjgxMDM1.YRdqbQ.W9XBZkKNSaIWcSO4nzBiJWI3yKc"
+discord_token = os.environ.get("token")
 pun = "215474057557049345"
 hongnunglen = "688024325030543399"
 valo_id = "752151646007459891"
