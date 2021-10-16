@@ -61,6 +61,7 @@ async def on_message(message):
     elif "ควย" in message.content:
         print(message.channel)
         await message.channel.send("~~ควย~~ กระจู๋")
+        await client.logout()
     elif "ปัน" in message.content:
         print(message.channel)
         await message.channel.send(f"<@{pun}> ติดแก้ม")
