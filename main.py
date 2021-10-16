@@ -43,24 +43,7 @@ async def on_message(message):
     elif message.content == "Ai ฝันดี":
         print(message.channel)
         await client.logout()
-    elif "นอน" in message.content:
-        print(message.channel)
-        await message.channel.send("ฝันดีนะคะ")
-    elif "นิว" in message.content:
-        print(message.channel)
-        await message.channel.send(f"<@{new}> สุดตีน")
-    # elif "ควย" in message.content:
-    #     print(message.channel)
-    #     await message.channel.send("~~ควย~~ กระจู๋")
-    elif "ปัน" in message.content:
-        print(message.channel)
-        await message.channel.send(f"<@{pun}> ติดแก้ม")
-    elif "ภูมิ" in message.content:
-        await message.channel.send(f"<@{pooms}> เธอค้าบ")
-    elif message.content == "Ai คือ":
-        print(message.channel)
-        await message.channel.send("Ai คือ Bot ชื่อ Ai ยินดีที่ได้รู้จักนะคะ")
-    elif message.content == "ต่อยกับไอ":
+    elif 'ต่อยกับ' in message.content:
         print(message.channel)
         result = randint(1,3)
         if result == 1:
@@ -69,6 +52,23 @@ async def on_message(message):
             await message.channel.send("ไอต่อยชนะ "+ message.author.mention + " " + str(randint(1, 50)) + " แต้ม")
         elif result == 3:
             await message.channel.send("ต่อยเสมอกับไอ")
+    elif "นอน" in message.content:
+        print(message.channel)
+        await message.channel.send("ฝันดีนะคะ")
+    elif "นิว" in message.content:
+        print(message.channel)
+        await message.channel.send(f"<@{new}> สุดตีน")
+    elif "ควย" in message.content:
+        print(message.channel)
+        await message.channel.send("~~ควย~~ กระจู๋")
+    elif "ปัน" in message.content:
+        print(message.channel)
+        await message.channel.send(f"<@{pun}> ติดแก้ม")
+    elif "ภูมิ" in message.content:
+        await message.channel.send(f"<@{pooms}> เธอค้าบ")
+    elif message.content == "Ai คือ":
+        print(message.channel)
+        await message.channel.send("Ai คือ Bot ชื่อ Ai ยินดีที่ได้รู้จักนะคะ")
     elif message.content == "กอดกับไอ":
         print(message.channel)
         result = randint(1,2)
