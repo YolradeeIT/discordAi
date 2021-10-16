@@ -42,6 +42,7 @@ async def on_message(message):
         await message.channel.send(f"<@&{valo_id}> Valorant กันเถอะ")
     elif message.content == "Ai ฝันดี":
         print(message.channel)
+        await message.channel.send("ฝันดีค่า")
         await client.logout()
     elif 'ต่อยกับ' in message.content:
         print(message.channel)
@@ -62,6 +63,7 @@ async def on_message(message):
         print(message.channel)
         await message.channel.send("~~ควย~~ กระจู๋")
         await client.logout()
+        client.run(discord_token)
     elif "ปัน" in message.content:
         print(message.channel)
         await message.channel.send(f"<@{pun}> ติดแก้ม")
