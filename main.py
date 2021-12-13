@@ -66,14 +66,12 @@ async def on_message(message):
     elif "นิว" in message.content:
         print(message.channel)
         await message.channel.send(f"<@{new}> สุดตีน")
-    # elif "ควย" in message.content:
-    #     print(message.channel)
-    #     await message.channel.send("~~ควย~~ กระจู๋")
+    elif "ควย" in message.content:
+        print(message.channel)
+        await message.channel.send("~~ควย~~ กระจู๋")
     elif "ปัน" in message.content:
         print(message.channel)
         await message.channel.send(f"<@{pun}> ติดแก้ม")
-    elif "ภูมิ" in message.content:
-        await message.channel.send(f"<@{pooms}> เธอค้าบ")
     elif message.content == "Ai คือ":
         print(message.channel)
         await message.channel.send("Ai คือ Bot ชื่อ Ai ยินดีที่ได้รู้จักนะคะ")
