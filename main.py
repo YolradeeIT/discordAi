@@ -23,6 +23,15 @@ hongnunglen = "688024325030543399"
 valo_id = "752151646007459891"
 pooms = "348699344406446090"
 new = "548499332026990613"
+command = {
+    '!youtube': 'ฝากสับตะไคร้ยูทูปด้วยนะคะ https://www.youtube.com/channel/UCEKSIeMY8_VwUiUkRy2C2UA',
+    '!sub': 'สามารถสมัครเป็นสมาชิกช่องเจ้าไอได้ที่ https://www.twitch.tv/products/aikaze_',
+    '!valo': 'AiKZ#0000',
+    '!fansign': '300 bits ขึ้นไป หรือ donate promtpay 100 baht ขึ้นไป เฉพาะวันที่เปิดรับเท่านั้นน้า',
+    '!gear': 'สาวก Logitech ล่ะ! Mouse : Logitech G703 Keyboard : Logitech G512 Earphone : Logitech G333',
+    '!ig': 'https://www.instagram.com/yolradx_pyr/',
+    '!donate': 'Promptpay, TrueWallet(หัก 25%) : https://tipme.in.th/aikaze'
+}
 
 # wrapper  / decorator : funtion in funtion
 @client.event
@@ -78,5 +87,8 @@ async def on_message(message):
     elif message.content == "ทำยังไงถึงจะชนะไอ":
         print(message.channel)
         await message.channel.send("ไม่มีทางหรอกค่ะ เพราะคุณอ่อนเกินไป")
-
+    elif message.content.startswith('!'):
+        print(message.channel)
+        if message.contect in list(command.keys()):
+            await message.channel.send(command.get(message.contect))
 client.run(discord_token)
