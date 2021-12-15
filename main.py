@@ -31,6 +31,7 @@ command = {
     '!ig': 'https://www.instagram.com/yolradx_pyr/',
     '!donate': 'Promptpay, TrueWallet(หัก 25%) : https://tipme.in.th/aikaze'
 }
+comm = '>!youtube\n>!sub\n>!valo\n>!fansign\n>!gear\n>!ig\n>!donate'
 
 # wrapper  / decorator : funtion in funtion
 @client.event
@@ -89,5 +90,5 @@ async def on_message(message):
     elif message.content in list(command.keys()):
         await message.channel.send(command[message.content])
     elif message.content == '!command':
-        await message.channel.send(i for i in list(command.keys()))
+        await message.channel.send(comm)
 client.run(discord_token)
