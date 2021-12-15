@@ -89,5 +89,5 @@ async def on_message(message):
     elif message.content in list(command.keys()):
         await message.channel.send(command[message.content])
     elif message.content == '!command':
-        await message.channel.send(*list(command.keys()))
+        await message.channel.send(i for i in list(command.keys()))
 client.run(discord_token)
