@@ -90,5 +90,7 @@ async def on_message(message):
     elif message.content.startswith('!'):
         print(message.channel)
         if message.contect in list(command.keys()):
-            await message.channel.send(command.get(message.contect))
+            await message.channel.send(command[message.contect])
+        if message.contect == '!command':
+            await message.channel.send(*list(command.keys()), sep='/n')
 client.run(discord_token)
