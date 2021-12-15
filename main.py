@@ -31,7 +31,7 @@ command = {
     '!ig': 'https://www.instagram.com/yolradx_pyr/',
     '!donate': 'Promptpay, TrueWallet(หัก 25%) : https://tipme.in.th/aikaze'
 }
-comm = '>!youtube\n>!sub\n>!valo\n>!fansign\n>!gear\n>!ig\n>!donate'
+comm = '> !youtube\n> !sub\n> !valo\n> !fansign\n> !gear\n> !ig\n> !donate'
 
 # wrapper  / decorator : funtion in funtion
 @client.event
