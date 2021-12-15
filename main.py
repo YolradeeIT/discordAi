@@ -21,7 +21,6 @@ discord_token = os.environ.get("token")
 pun = "215474057557049345"
 hongnunglen = "688024325030543399"
 valo_id = "752151646007459891"
-pooms = "348699344406446090"
 new = "548499332026990613"
 command = {
     '!youtube': 'ฝากสับตะไคร้ยูทูปด้วยนะคะ https://www.youtube.com/channel/UCEKSIeMY8_VwUiUkRy2C2UA',
@@ -90,5 +89,5 @@ async def on_message(message):
     elif message.content in list(command.keys()):
         await message.channel.send(command[message.content])
     elif message.content == '!command':
-        await message.channel.send(*list(command.keys()), sep='/n')
+        await message.channel.send(*list(command.keys()))
 client.run(discord_token)
