@@ -87,10 +87,8 @@ async def on_message(message):
     elif message.content == "ทำยังไงถึงจะชนะไอ":
         print(message.channel)
         await message.channel.send("ไม่มีทางหรอกค่ะ เพราะคุณอ่อนเกินไป")
-    elif message.content.startswith('!'):
-        print(message.channel)
-        if message.contect in list(command.keys()):
-            await message.channel.send(command[message.contect])
-        if message.contect == '!command':
-            await message.channel.send(*list(command.keys()), sep='/n')
+    elif message.content in list(command.keys()):
+        await message.channel.send(command[message.content])
+    elif message.content == '!command':
+        await message.channel.send(*list(command.keys()), sep='/n')
 client.run(discord_token)
