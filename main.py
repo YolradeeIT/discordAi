@@ -25,11 +25,11 @@ new = "548499332026990613"
 command = {
     '!youtube': 'ฝากสับตะไคร้ยูทูปด้วยนะคะ https://www.youtube.com/channel/UCEKSIeMY8_VwUiUkRy2C2UA',
     '!sub': 'สามารถสมัครเป็นสมาชิกช่องเจ้าไอได้ที่ https://www.twitch.tv/products/aikaze_',
-    '!valo': 'AiKZ#0000',
+    '!id': 'AiKZ#0000',
     '!fansign': '300 bits ขึ้นไป หรือ donate promtpay 100 baht ขึ้นไป เฉพาะวันที่เปิดรับเท่านั้นน้า',
     '!gear': 'สาวก Logitech ล่ะ! Mouse : Logitech G703 Keyboard : Logitech G512 Earphone : Logitech G333',
     '!ig': 'https://www.instagram.com/yolradx_pyr/',
-    '!donate': 'Promptpay, TrueWallet(หัก 25%) : https://tipme.in.th/aikaze'
+    '!donate': 'Promptpay, TrueWallet(หัก 25%) : https://tipme.in.th/aikaze',
 }
 comm = '> !youtube\n> !sub\n> !valo\n> !fansign\n> !gear\n> !ig\n> !donate'
 
@@ -89,6 +89,8 @@ async def on_message(message):
         await message.channel.send("ไม่มีทางหรอกค่ะ เพราะคุณอ่อนเกินไป")
     elif message.content in list(command.keys()):
         await message.channel.send(command[message.content])
-    elif message.content == '!command':
+    elif message.content == '!commands':
         await message.channel.send(comm)
+    elif 'พี่เจ' in message.content:
+        await message.channel.send('พี่เจยิงคม https://www.twitch.tv/aikaze_/clip/PleasantFurtiveHyenaTooSpicy-Amv4Uzh-f1CL2vOz')
 client.run(discord_token)
