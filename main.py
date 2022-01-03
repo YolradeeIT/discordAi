@@ -91,6 +91,6 @@ async def on_message(message):
         await message.channel.send(command[message.content])
     elif message.content == '!commands':
         await message.channel.send(comm)
-    elif 'พี่เจ' in message.content:
-        await message.channel.send('พี่เจยิงคม https://www.twitch.tv/aikaze_/clip/PleasantFurtiveHyenaTooSpicy-Amv4Uzh-f1CL2vOz')
+    # elif 'พี่เจ' in message.content:
+    #     await message.channel.send('พี่เจยิงคม https://www.twitch.tv/aikaze_/clip/PleasantFurtiveHyenaTooSpicy-Amv4Uzh-f1CL2vOz')
 client.run(discord_token)
