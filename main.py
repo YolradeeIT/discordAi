@@ -5,6 +5,7 @@
 # role valorant id 752151646007459891
 # ห้องนั่งเล่น id = 688024325030543399
 
+from re import M
 import discord
 from discord import channel
 from discord.client import Client
@@ -69,6 +70,9 @@ async def on_message(message):
             await message.channel.send(message.content[6:] + "กอดกลับ")
         elif result == 2:
             await message.channel.send(message.content[6:] + "หันหน้าหนี")
+    elif message.content.startswith('รัก'):
+        print(message.channel)
+        await message.channel.send(message.author.mention + 'มีความรักให้' + message.content[3:] + str(randint(-100, 100)) + '%%')
     elif "นอน" in message.content:
         print(message.channel)
         await message.channel.send("ฝันดีนะคะ")
