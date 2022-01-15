@@ -72,7 +72,7 @@ async def on_message(message):
             await message.channel.send(message.content[6:] + "หันหน้าหนี")
     elif message.content.startswith('รัก'):
         print(message.channel)
-        await message.channel.send(message.author.mention + 'มีความรักให้' + message.content[3:] + str(randint(-100, 100)) + '%%')
+        await message.channel.send(message.author.mention + ' มีความรักให้' + message.content[3:] + ' ' + str(randint(-100, 100)) + '%')
     elif "นอน" in message.content:
         print(message.channel)
         await message.channel.send("ฝันดีนะคะ")
