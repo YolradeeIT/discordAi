@@ -97,4 +97,7 @@ async def on_message(message):
         await message.channel.send(comm)
     # elif 'พี่เจ' in message.content:
     #     await message.channel.send('พี่เจยิงคม https://www.twitch.tv/aikaze_/clip/PleasantFurtiveHyenaTooSpicy-Amv4Uzh-f1CL2vOz')
+    elif ':Bits:' in message.content:
+        print(message.channel)
+        await message.channel.send('ขอบคุณค่ะ แต่ทีหลังไม่ต้อง')
 client.run(discord_token)
