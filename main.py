@@ -26,11 +26,13 @@ new = "548499332026990613"
 command = {
     '!youtube': 'ฝากสับตะไคร้ยูทูปด้วยนะคะ https://www.youtube.com/channel/UCEKSIeMY8_VwUiUkRy2C2UA',
     '!sub': 'สามารถสมัครเป็นสมาชิกช่องเจ้าไอได้ที่ https://www.twitch.tv/products/aikaze_',
-    '!id': 'AiKZ#0000',
+    '!id': 'NongAii#0000, Boo Bee#bibee',
     '!fansign': '300 bits ขึ้นไป หรือ donate promtpay 100 baht ขึ้นไป เฉพาะวันที่เปิดรับเท่านั้นน้า',
     '!gear': 'สาวก Logitech ล่ะ! Mouse : Logitech G703 Keyboard : Logitech G512 Earphone : Logitech G333',
     '!ig': 'https://www.instagram.com/yolradx_pyr/',
     '!donate': 'Promptpay, TrueWallet(หัก 25%) : https://tipme.in.th/aikaze',
+    '!crosshair': '1211 หรือ 1131',
+    '!rank': 'G-P'
 }
 comm = '> !youtube\n> !sub\n> !valo\n> !fansign\n> !gear\n> !ig\n> !donate'
 
